@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cart_bag</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+</head>
+
+<body>
+    <!-- <div class="main">
+        <div class="add_cart" (click)="slideMenuActive()">
+            <div class="icon_text">
+                <i class="las la-shopping-bag">
+                <p>0 ITEMS</p>
+            </div>
+
+            <div class="amount">
+                <div>
+                    <span>Tk 0</span>
+                </div>
+            </div>
+        </div> -->
+
+        
+        <div id="mySidenav" class="sidenav">
+            
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+              <div class="cart">
+                <h3>CART</h3>
+
+                <div class="products-cart">
+                    <div class="product-cart">
+                        <div class="product-quantity">
+                            <p>Product Name</p>
+                        </div>
+                        <div class="product-quantity">
+                            <p>Price</p>
+                        </div>
+                        <div class="product-quantity">
+                            <p>Quantity</p>
+                        </div>
+                        <div class="product-quantity">
+                            <p>Action</p>
+                        </div>
+                    </div>
+                    <div class="product-cart">
+                        <div class="product-details">
+                            <h4>Product Name</h4>
+                        </div>
+                        <div class="product-details">
+                            <p>Tk. 100.00</p>
+                        </div>
+                        <div class="product-quantity">
+                            <div><button class="minus-btn" type="button" name="button">-</button></div>
+                            <div><p>1</h3></div>
+                            <div><button class="plus-btn" type="button" name="button">+</button></div>
+                        </div>
+                        <div class="product-remove">
+                            <p>X</p>
+                        </div>
+                    </div>
+                    <div class="product-cart">
+                        <div class="product-details">
+                            <h4>Product Name</h4>
+                        </div>
+                        <div class="product-details">
+                            <p>Tk. 100.00</p>
+                        </div>
+                        <div class="product-quantity">
+                            <div><button class="minus-btn" type="button" name="button">-</button></div>
+                            <div><p>1</h3></div>
+                            <div><button class="plus-btn" type="button" name="button">+</button></div>
+                        </div>
+                        <div class="product-remove">
+                            <p>X</p>
+                        </div>
+                    </div>
+                </div>
+                
+              </div>
+
+              <div class="total_proceed">
+                <div class="total">
+                    <p>TOTAL: Tk. 200.00</p>
+                </div>
+                <div class="proceed">
+                    <a href="checkout.html">PROCEED TO CHECKOUT</a>
+                </div>
+              </div>
+        </div>
+          
+      
+
+          <div class="add_cart" onclick="openNav()">
+            <div class="icon_text">
+                <i class="fa fa-shopping-cart" style="padding-top: 4px;"></i>
+                <p>0 ITEMS</p>
+            </div>
+
+            <div class="amount">
+                <div>
+                    <span>Tk 0</span>
+                </div>
+            </div>
+          <script>
+          function openNav() {
+            document.getElementById("mySidenav").style.width = "450px";
+          }
+          
+          function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+          }
+          </script>
+
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

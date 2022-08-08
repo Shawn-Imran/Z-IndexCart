@@ -1,0 +1,254 @@
+.add_cart {
+    position: fixed;
+    top: 38%;
+    right: 0;
+    z-index: 9000;
+  
+    cursor: pointer;
+    height: 82px;
+    width: 57px;
+    background-color: #ff3d71;
+    border: 0.5px solid #ff3d71;
+    color: rgb(255, 255, 255);
+    text-align: center;
+  
+    border-radius: 10px 0 0 10px;
+  
+}
+.add_cart .icon_text {
+  background-color: #192038;
+  border-radius: 10px 0 0 0;
+}
+.add_cart .icon_text p {
+  font-size: 0.7rem;
+  margin-top: 5px;
+  margin-bottom: 5px;
+
+}
+
+.add_cart .icon_text i{
+  font-size: 1.7rem;
+}
+
+.cart{
+    display: grid;
+    align-items: center;
+    border: none;
+    height: 40px;
+    background-color: #ff3d71;
+}
+
+.cart h3{
+    font-size: 1.2rem;
+    padding-left: 40px;
+    padding-bottom: 5px;
+    color: rgb(255, 255, 255);
+    padding-top: 8px;
+}
+ 
+
+
+
+
+
+
+.product-cart {
+    display: grid;
+    grid-template-columns: 30% 20% 30% 20%;
+    height: 100px;
+    width: 100%;
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #ff3d71;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+.product-cart .product-image {
+    grid-column: 1;
+    grid-row: 1;
+    justify-self: center;
+    align-self: center;
+}
+.product-cart .product-image img {
+    width: 80px;
+    height: 80px;
+}
+
+.product-quantity {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-self: center;
+    align-self: center;
+    padding: 0 10px 0 10px;
+}
+
+.product-quantity p{
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-align: center;
+    padding: 0 10px 0 10px;
+}
+
+.product-details{
+    padding: 0 1px 0 10px;
+    display: grid;
+    align-items: center;
+
+}
+.product-details h4{
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    text-align: left;
+    margin-left: 5px;
+}
+.product-details p{
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.plus-btn {
+  
+    height: 30px;
+    width: 30px;
+    background-color: #ff3d71;
+    border: none;
+    color: rgb(255, 255, 255);
+    border-radius: 7px;
+    text-align: center;
+}
+.minus-btn {
+      
+     height: 30px;
+     width: 30px;
+     background: none;
+     border: 2px solid #ff3d71;
+     color: rgb(0, 0, 0);
+     border-radius: 7px;
+     text-align: center;
+     outline-style: none;
+}
+.minus-btn:focus{
+    outline: none;
+}
+.plus-btn:focus{
+    outline: none;
+}
+
+.product-remove{
+    display: grid;
+    align-items: center;
+}
+.product-remove p{
+    font-size: 1.2rem;
+    font-weight: 600;
+    border: none;
+    color: #ff3d71;
+    border-radius: 7px;
+    text-align: center;
+    padding-right: 8px;
+    
+}
+
+
+
+.total_proceed {
+    display: grid;
+    grid-template-columns: 48% 50%;
+    justify-self: center;
+    align-self: center;
+
+    background-color: #ff3d71;
+    border: none;
+    color: rgb(255, 255, 255);
+    border-radius: 7px 7px 0 0;
+    height: 70px;
+
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.total_proceed .total{
+    display: grid;
+    align-items: center;
+}
+
+.total_proceed p{
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: center;
+    padding: 0 10px 0 10px;
+}
+
+.total_proceed .proceed{
+    display: grid;
+    align-items: center;
+}
+
+.total_proceed .proceed a{
+    color: #ff3d71;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    padding: 0 10px 0 10px;
+    text-decoration: none;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 7px;
+    height: 30px;
+}
+
+.total_proceed .proceed a:hover{
+    background: none;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 7px;
+}
+
+
+      
+      .sidenav {
+
+        display: block;
+        background-color: #fff;
+        top: 0px;
+        right: 0%;
+        overflow-y: auto;
+        z-index: 9999;
+
+
+        width: 0;
+        height: 100%;
+        position: fixed;
+        top: 0px;
+        background-color: rgb(240, 240, 240);
+        overflow-x: hidden;
+        transition: 0.5s;
+        
+      }
+      
+      .sidenav a {
+        text-decoration: none;
+        font-size: 25px;
+        color: #ffffff;
+        display: block;
+        transition: 0.3s;
+      }
+      
+      .sidenav a:hover {
+        color: #000000;
+      }
+      
+      .sidenav .closebtn {
+        position: absolute;
+        top: -2%;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+      }
+      
+      @media screen and (max-height: 450px) {
+        .sidenav {padding-top: 15px;}
+        .sidenav a {font-size: 18px;}
+      }
